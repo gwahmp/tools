@@ -1,0 +1,26 @@
+remote_theme: gwahmp/gwahmp.github.io
+markdown: kramdown
+
+# Site settings
+title: App | Tools
+description: >- 
+  Wikimint Tools
+
+url: "https://app.wikimint.com/tools" 
+baseurl: "" 
+permalink: pretty
+
+include_homepage: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-remote-theme
+  - jekyll-include-cache
+
+exclude:
+  - _admin
+  - README.md
+  - node_modules
+  - vendor

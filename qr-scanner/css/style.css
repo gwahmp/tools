@@ -1,0 +1,41 @@
+.scan-success #video{
+border:6px solid #198754 ! important;
+}
+.scan-error #video{
+border:6px solid #dc3545 ! important;
+}
+#video{
+  background:#000000 ! important;
+  min-height:240px ! important;
+}
+.scanning #video{
+  border:6px solid rgba(0, 162, 255, 1) ! important;
+}
+
+.scanner{
+  position:relative; 
+  }
+.scanning .scan
+{
+  width:calc(100% - 25px);
+  height:3px;
+  background-color:cyan;
+  position:absolute;
+  z-index:9999;
+   -moz-animation: scan 1s linear infinite;
+  -webkit-animation: scan 1s linear infinite;
+  animation: scan 1s linear infinite;
+   -webkit-animation-direction: alternate-reverse;
+   box-shadow: 0px 0px 20px rgba(0, 162, 255, 1); /* Cyan shadow */
+  }
+
+@-webkit-keyframes scan {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(260px);
+    transform: translateY(260px);
+  }
+}
