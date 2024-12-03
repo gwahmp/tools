@@ -18,7 +18,7 @@ description: Discover top-rated free online tools to enhance productivity, simpl
 </div>
 
 <div id="tools_container" class="container my-5">
- <h2 class="mt-5 fs-4 text-secondary">Website & Development</h2><hr/>
+ <h2 class="mt-5 fs-4 text-secondary anchor" id="web-development">Website & Development</h2><hr/>
  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
     {% for item in site.data.dev.tools %}
       <div class="col">
@@ -33,7 +33,7 @@ description: Discover top-rated free online tools to enhance productivity, simpl
         </div>
     {% endfor %}
  </div>
- <h2 class="mt-5 fs-4 text-secondary">SEO & Content</h2><hr/>
+ <h2 class="mt-5 fs-4 text-secondary anchor" id="seo-content">SEO & Content</h2><hr/>
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
         {% for item in site.data.seo.tools %}
       <div class="col">
@@ -48,7 +48,7 @@ description: Discover top-rated free online tools to enhance productivity, simpl
         </div>
     {% endfor %}
      </div>
-  <h2 class="mt-5 fs-4 text-secondary">Security & Privacy</h2><hr/>
+  <h2 class="mt-5 fs-4 text-secondary anchor" id="security-privacy">Security & Privacy</h2><hr/>
  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
         {% for item in site.data.sec.tools %}
       <div class="col">
@@ -64,7 +64,7 @@ description: Discover top-rated free online tools to enhance productivity, simpl
     {% endfor %}
      </div>
 
-<h2 class="mt-5 fs-4 text-secondary">General Utilities</h2><hr/>
+<h2 class="mt-5 fs-4 text-secondary anchor" id="general-utilities">General Utilities</h2><hr/>
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
         {% for item in site.data.uti.tools %}
       <div class="col">
@@ -102,9 +102,9 @@ description: Discover top-rated free online tools to enhance productivity, simpl
 <p class="bg-white p-4 rounded-3">tools are available across all categories. We have developed a diverse set of tools to help you with various aspects of website development, SEO, security, and more. Each category below showcases the number of tools we offer to make your tasks easier and more efficient. You can find everything you need for web development, content optimization, and much more.</p></div>
 </div>
 
-  <div class="row">
+  <div class="row row-cols-2 row-cols-md-4">
     <!-- Website Development Tools -->
-    <div class="col-md-3 mb-4">
+    <div class="col mb-4">
     <div class="category-box text-center bg-white p-5 shadow-sm border border-primary rounded-3">
         <div class="count display-1 fw-bold text-dark" id="count-dev">
         {{ site.data.dev.tools | size }}
@@ -116,7 +116,7 @@ description: Discover top-rated free online tools to enhance productivity, simpl
     </div>
 
   <!-- SEO & Content Tools -->
-  <div class="col-md-3 mb-4">
+  <div class="col mb-4">
     <div class="category-box text-center bg-white p-5 shadow-sm border border-primary rounded-3">
       <div class="count display-1 fw-bold text-dark" id="count-seo">
       {{ site.data.seo.tools | size }}
@@ -128,7 +128,7 @@ description: Discover top-rated free online tools to enhance productivity, simpl
   </div>
 
   <!-- Security & Privacy Tools -->
-  <div class="col-md-3 mb-4">
+  <div class="col mb-4">
     <div class="category-box text-center bg-white p-5 shadow-sm border border-primary rounded-3">
       <div class="count display-1 fw-bold text-dark" id="count-security">
       {{ site.data.sec.tools | size }}
@@ -140,7 +140,7 @@ description: Discover top-rated free online tools to enhance productivity, simpl
   </div>
 
   <!-- General Utilities -->
-  <div class="col-md-3 mb-4">
+  <div class="col mb-4">
     <div class="category-box text-center bg-white p-5 shadow-sm border border-primary rounded-3">
       <div class="count display-1 fw-bold text-dark" id="count-utils">
       {{ site.data.uti.tools | size }}
