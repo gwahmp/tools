@@ -2,6 +2,7 @@
 layout: default
 title: Best Online Tools to Boost Productivity and Streamline Your Workflow
 description: Discover top-rated free online tools to enhance productivity, simplify tasks, and optimize your workflow. Explore the best digital solutions for professionals, students, and businesses to achieve more in less time.
+noindex: false
 ---
 
 <div class="bg-light">

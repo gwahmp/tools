@@ -2,6 +2,7 @@
 layout: default
 title: Free SEO Analyzer Tool - Boost Your Website's Ranking Instantly
 description: Analyze your website's SEO performance with our free SEO analyzer tool. Get actionable insights, improve keyword rankings, optimize on-page SEO, and enhance your site's visibility on search engines.
+noindex: false
 ---
 <link rel="stylesheet" href="assets/css/style.css"/>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wikimint/wikimint@main/public/framework/css/complete.min.css"/>
