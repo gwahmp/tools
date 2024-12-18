@@ -2,6 +2,7 @@
 layout: default
 title: QR Code ScannerOnline | Scan QR Codes Instantly & Securely
 description: Free web-based QR scanner tool. Instantly scan QR codes securely with no app download. Explore benefits, use cases, and step-by-step usage guide.
+date: 2024-12-18
 noindex: false
 ---
 <link rel="stylesheet" href="css/style.css"/>
