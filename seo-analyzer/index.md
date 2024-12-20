@@ -46,7 +46,28 @@ noindex: false
 </div>
 </div>
 
+
 <div class="container">
+
+<div class="col-6 mx-auto text-center">
+<h2 class="small fs-5 fw-normal text-secondary">SEO Analyzer Browser Extension</h2>
+<h3>Available on Chrome, Edge, and Firefox!</h3><hr/>
+  <p class="mt-3">Analyze your website's SEO effortlessly with our browser extension, now compatible with Chrome, Edge, and Firefox.</p>
+  
+  <div class="row justify-content-center mt-4 mb-4 pb-4">
+    <div class="col-4 col-md-2">
+      <a href="https://chromewebstore.google.com/detail/seo-analyzer/hemdnellijapgknfcmjeabefoeedpiob" target="_blank"><img src="/tools/assets/images/google-chrome.webp" title="Google Chrome" alt="Google Chrome browser logo representing compatibility with the SEO Analyzer extension, allowing users to optimize website SEO directly from Chrome." class="img-fluid" title="Available on Google Chrome"></a>
+    </div>
+    <div class="col-4 col-md-2">
+      <img style="opacity: 0.5;" src="/tools/assets/images/microsoft-edge.webp" title="Microsoft Edge" alt="Microsoft Edge browser logo highlighting support for the SEO Analyzer extension, making it easy to analyze and optimize website SEO directly in Edge." class="img-fluid" title="Available on Microsoft Edge">
+    </div>
+    <div class="col-4 col-md-2">
+      <img style="opacity: 0.5;" src="/tools/assets/images/mozilla-firefox.webp" title="Mozilla Firefox" alt="Mozilla Firefox browser logo showcasing the availability of the SEO Analyzer extension, enabling website SEO analysis and optimization seamlessly in Firefox" class="img-fluid" title="Available on Mozilla Firefox">
+    </div>
+  </div>
+</div>
+
+
 <h2>Awesome Free Online SEO Analysis Tools You Need to Check Out</h2>
 
 <p>In today's digital world, SEO is a big deal if you want your website to succeed. Whether you're running a personal blog or an online store, having a solid online presence is key to attracting visitors and reaching your target audience. Luckily, there are some cool free SEO analysis tools available online that can help you out. In this article, we'll dive into the benefits of using these tools and how they can supercharge your SEO game.</p>
