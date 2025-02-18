@@ -312,7 +312,6 @@ noindex: false
 
 <script src="assets/js/script.js"></script>
 <script src="assets/js/events.js"></script>
-<!-- <script src="assets/js/only-dev.js"></script> -->
 <script src="assets/js/analytics.js"></script>
 
 
