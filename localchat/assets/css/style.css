@@ -1,0 +1,16 @@
+html,body,#app {overflow:hidden ! important;}
+#chat-messages { 
+    min-height: calc(100vh - 147px);
+    max-height: calc(100vh - 147px);
+}
+.sidebar-item { cursor: pointer; }
+.avatar-circle { width:40px;height:40px;border-radius:50%;display:inline-block;background:#6c757d; }
+.tick { font-size:0.85rem; margin-left:6px; color:rgba(0,0,0,0.35); }
+.tick.delivered { color: rgba(0,0,0,0.6); }
+.tick.read { color: #0d6efd; }
+.typing-indicator { font-style: italic; font-size:0.9rem; color:#6c757d; }
+header, footer{display:none ! important;}
+.sidebar{
+    min-height: calc(100vh - 0px);
+    max-height: calc(100vh - 0px);
+}

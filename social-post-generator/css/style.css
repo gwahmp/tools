@@ -1,0 +1,16 @@
+.media-preview {
+    position: relative;
+    aspect-ratio: 1 / 1; /* or 16/9 */
+    overflow: hidden;
+  }
+  
+  .overlay-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  }
+  
+  .brand-overlay img {
+    max-height: 30px;
+  }
+  
