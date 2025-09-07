@@ -10,59 +10,65 @@ noindex: false
 <div id="app" class="container-fluid h-100">
     <div class="row h-100">
       <!-- Sidebar -->
-      <div class="col-md-4 col-lg-3 border-end p-0 d-flex flex-column sidebar">
+      <div id="sideBarCollapse" class="col-md-4 col-lg-3 border-end p-0 sidebar d-md-block">
         <div class="p-3 border-bottom bg-light">
+          <div class="d-flex gap-2 align-items-center mb-3">
+            <div class="d-flex flex-grow-1 align-items-center">
+              <a href="https://www.wikimint.com"><img width="50" height="30" src="/assets/images/wikimint-icon.webp"/></a> <h1 class="fs-4 ms-2 lead fw-normal text-black">LocalChat</h1>
+            </div>
+            <button class="btn d-none" type="button" data-bs-toggle="collapse" data-bs-target="#sideBarCollapse">
+            <i class="bi bi-x-lg text-dark fs-3"></i>
+          </button>
+           <button id="open-settings" class="btn btn-outline-secondary" title="Settings"><i class="bi bi-gear"></i></button>
+          </div>
           <div class="d-flex gap-2">
             <div class="flex-grow-1">
-              <input id="search-input" class="form-control" placeholder="Search contacts & groups">
+              <input id="search-input" class="form-control d-none" placeholder="Search contacts & groups">
             </div>
             <div>
-              <button id="open-settings" class="btn btn-outline-secondary" title="Settings"><i class="bi bi-gear"></i></button>
+              <!-- <button id="open-settings" class="btn btn-outline-secondary" title="Settings"><i class="bi bi-gear"></i></button> -->
             </div>
           </div>
-
           <div class="mt-3">
-            <div class="mb-2 small text-muted">Your device link (share)</div>
+            <div class="mb-2 small text-muted">Your chat link (share)</div>
             <div class="input-group mb-2">
               <input type="text" id="my-link" class="form-control" readonly>
               <button class="btn btn-outline-secondary" id="copy-my-link"><i class="bi bi-clipboard"></i></button>
             </div>
-
-            <div class="mb-2 small text-muted">Create / Open group</div>
-            <div class="input-group">
+            <div class="mb-2 small text-muted d-none">Create / Open group</div>
+            <div class="input-group d-none">
               <input type="text" id="room-input" class="form-control" placeholder="group name">
               <button class="btn btn-outline-secondary" id="open-room"><i class="bi bi-people"></i></button>
               <button class="btn btn-outline-primary" id="new-group-btn" title="New Group"><i class="bi bi-plus-lg"></i></button>
             </div>
           </div>
         </div>
-
         <div class="p-3 flex-grow-1 overflow-auto">
           <div id="sidebar-list" class="list-group"></div>
         </div>
-
         <div class="p-3 small text-muted border-top">
-          Tip: share your device link `?u=UUID&name=YourName` with people on the same Wi-Fi to add them as contacts.
+          <strong>Note</strong>: You can chat with people on the same Wi-Fi or LAN. All chats are stored on your local devices only.
         </div>
       </div>
-
       <!-- Chat panel -->
-      <div class="col-md-8 col-lg-9 d-flex flex-column p-0" style="min-height:700px;">
-        <div class="d-flex align-items-center p-3 border-bottom bg-light">
+      <div class="col-md-8 col-lg-9 p-0">
+        <div class="d-flex align-items-center px-3 py-2 border-bottom bg-light">
           <div class="avatar-circle me-2"></div>
           <div class="flex-grow-1">
             <h6 id="chat-title" class="mb-0">LocalChat</h6>
-            <small id="chat-sub" class="text-muted">Select a contact or group</small>
-            <div id="typing-line" class="typing-indicator"></div>
+            <small id="chat-sub" class="text-muted d-none">Select a contact or group</small>
+            <div id="typing-line" class="typing-indicator d-none"></div>
+            <small id="status"></small>
           </div>
-          <div class="text-end">
+          <div class="text-end d-none">
             <small id="peer-status" class="text-muted"></small>
           </div>
+          <button class="btn d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#sideBarCollapse">
+            <i class="bi bi-x-lg text-dark fs-3"></i>
+          </button>
         </div>
-
         <div id="chat-messages" class="flex-grow-1 overflow-auto p-3 bg-white"></div>
-
-        <div class="p-3 border-top bg-light">
+        <div class="px-3 py-2 border-top bg-light">
           <div class="input-group">
             <input type="text" id="message-input" class="form-control" placeholder="Type a message...">
             <button id="send-btn" class="btn btn-primary"><i class="bi bi-send"></i></button>
@@ -132,7 +138,7 @@ noindex: false
             <label class="form-label">Display Name</label>
             <input type="text" id="my-name" class="form-control">
           </div>
-          <div class="mb-3">
+          <div class="mb-3 d-none">
             <label class="form-label">Your User ID (readonly)</label>
             <input type="text" id="my-uuid" class="form-control" readonly>
           </div>
